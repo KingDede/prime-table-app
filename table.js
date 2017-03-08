@@ -1,6 +1,7 @@
 #! /usr/bin/env node
 
-var primes = require("./primes.js")
+var primes = require("./primes.js"),
+    table = require("text-table")
 
 // Get the argument from the command line (set it to 10 if no argument)
 var tblSize = parseInt(process.argv[2] || "10", 10),
@@ -33,4 +34,4 @@ for(var i=1; i < tblSize+1; i++){
     }
 }
 // Display our final table
-console.log(tableFinal);
+console.log(table(tableFinal, {hsep:['|']}));
