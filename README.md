@@ -1,29 +1,14 @@
-# prime-table-app [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 > A simple javascript app to generate a multiplication table of (N) prime numbers.
 
 ## Installation
 
-```sh
-$ npm install --save prime-table-app
-```
 
-## Usage
+## Code Review
+The prime number generation works and can generate the first 1 million prime numbers in ~5 sec. This could be improved using a sieve technique. It has been a while since I've used javascript so I feel I'm not as confident as some other programming languages although I remembered things as I went along. As a student the whole idea of unit tests and the test driven approach is somewhat new to me but I am glad to have learnt more about them and hope to try putting them into practice more often.  
 
-```js
-var primeTableApp = require('prime-table-app');
 
-primeTableApp('Rainbow');
-```
+
+
 ## License
 
 MIT © [KingDede]()
-
-
-[npm-image]: https://badge.fury.io/js/prime-table-app.svg
-[npm-url]: https://npmjs.org/package/prime-table-app
-[travis-image]: https://travis-ci.org/KingDede/prime-table-app.svg?branch=master
-[travis-url]: https://travis-ci.org/KingDede/prime-table-app
-[daviddm-image]: https://david-dm.org/KingDede/prime-table-app.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/KingDede/prime-table-app
-[coveralls-image]: https://coveralls.io/repos/KingDede/prime-table-app/badge.svg
-[coveralls-url]: https://coveralls.io/r/KingDede/prime-table-app

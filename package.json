@@ -1,17 +1,13 @@
 {
-  "name": "prime-table-app",
-  "version": "0.0.0",
+  "name": "prime-tables",
+  "version": "0.1.1",
   "description": "A simple javascript app to generate a multiplication table of (N) prime numbers.",
   "homepage": "",
   "author": {
-    "name": "KingDede",
-    "email": "jason-campbell23@hotmail.com",
-    "url": ""
+    "name": "Jason Campbell",
+    "email": "jason-campbell23@hotmail.com"
   },
-  "files": [
-    "dist"
-  ],
-  "main": "dist/index.js",
+  "main": "table.js",
   "keywords": [
     "prime",
     "node",
@@ -44,10 +40,14 @@
       "mocha": true
     }
   },
-  "repository": "KingDede/prime-table-app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KingDede/prime-table-app.git"
+},
   "scripts": {
     "prepublish": "gulp prepublish",
-    "test": "gulp"
+    "test": "mocha",
+    "print-table": "node ./table.js"
   },
   "license": "MIT",
   "dependencies": {
