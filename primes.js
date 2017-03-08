@@ -18,9 +18,8 @@ function nextPrime(value) {
     }
     return value === 2 ? 3 : 2;
 }
-/*
-    Calculates the first (n) prime numbers and returns them as an array
-*/
+
+// Calculates the first (n) prime numbers and returns them as an array
 function getPrimes (n) {
     var value, result = [];
     for (var i = 0; i < n; i++) {
@@ -29,9 +28,8 @@ function getPrimes (n) {
     }
     return result;
 }
-/*
-    From an array of primes returns a 2d array of the multiplication table.
-*/
+
+// From an array of primes returns a 2d array of the multiplication table.
 function multiplicationTable(primes) {
     var tbl = [];
     for (var i=0; i < primes.length; i++) {
